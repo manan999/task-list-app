@@ -4,6 +4,8 @@ const userHandler = require('./handlers/User.js') ;
 const taskHandler = require('./handlers/Task.js') ;
 const loginHandler = require('./handlers/Login.js') ;
 
+//To connect to atlas database use CONN_STRING as DB_URL
+
 const app = exp() ;
 
 app.use(exp.json()) ;

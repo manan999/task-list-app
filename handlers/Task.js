@@ -6,11 +6,11 @@ const auth = require('../src/auth.js') ;
 const router = new exp.Router() ;
 
 //Comment while upload
-router.get('/tasks', (req, res) => {
-	Task.find({})
-	.then(tasks => res.json(tasks))
-	.catch(err => res.status(404).json(err)) ;
-}) ;
+// router.get('/tasks', (req, res) => {
+// 	Task.find({})
+// 	.then(tasks => res.json(tasks))
+// 	.catch(err => res.status(404).json(err)) ;
+// }) ;
 
 router.get('/tasks/me', auth, (req, res) => {
     const {complete, limit, skip, sortBy, sortType} = req.query ;

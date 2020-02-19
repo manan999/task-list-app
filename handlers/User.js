@@ -61,12 +61,12 @@ router.delete('/users/me/upload', auth, (req, res) => {
 }) ;
 
 //Comment while upload
-router.get('/users', (req, res) => {
+// router.get('/users', (req, res) => {
 
-	User.find({})
-	.then(users => res.json(users))
-	.catch(err => res.status(404).json(err)) ;
-}) ;
+// 	User.find({})
+// 	.then(users => res.json(users))
+// 	.catch(err => res.status(404).json(err)) ;
+// }) ;
 
 //ACTUAL END_POINTS
 router.post('/users', (req, res) => {
